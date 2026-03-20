@@ -134,6 +134,12 @@ async function convertSound(request: ConvertSoundRequest): Promise<ArrayBuffer> 
   await ffmpeg.exec([
     "-i",
     "file",
+    "-b:a",
+    "96k",
+    "-ac",
+    "1",
+    "-ar",
+    "32000",
     "-metadata",
     `artist=${request.artist}`,
     "-metadata",
