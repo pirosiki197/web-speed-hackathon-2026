@@ -9,7 +9,7 @@ module.exports = (api) => {
         {
           targets: "ie 11",
           corejs: "3",
-          modules: "commonjs",
+          modules: false,
           useBuiltIns: "usage",
         },
       ],
